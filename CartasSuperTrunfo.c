@@ -3,9 +3,49 @@
 
 int main() {
 
-printf("Desafio xadrez!\n");
-printf("Novo commit\n");
+int população;
+float área;''
+float Pib;
+int Numero de pontos turisticos;
+
+printf("A população é: \n);
+scanf("%d",&pop
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
