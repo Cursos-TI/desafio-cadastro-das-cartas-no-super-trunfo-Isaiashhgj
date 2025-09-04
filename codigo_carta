@@ -1,0 +1,85 @@
+#include <stdio.h>
+#include <stdio.h>
+
+
+
+
+
+struct Cidade{
+   char estado [3];
+   char codigos cartas[3][4];
+   char nome [50];
+   int populacao;
+   float area;
+   float pib;
+   int pontos turisticos;
+   int pontos;
+void Mostrar dados (struct cidade *c){
+printf("\n Dados da Cidade:\n");
+printf("Estado: %s\n", c->estado);
+printf("Código da Carta: %s\n", %s, %s, %s\n" , c->codigos_carta[0], c-.codigos_carta[1], c->codigos_carta[2]");
+printf("Nome; %s\n", c->nome);
+printf("Popução: %d\n," c->populacao);
+printf("Área (km²): %,2f\n", c->area);
+printf("PIB: %.2f\n" , c->pib);
+printf("Número de pontos turísticos:%d\n", c->pontos turisticos);
+printf("Pontos  atuais do jogador: %d\n\n",c->pontos);
+}
+void explorar(struct Cidade *c){
+printf("🌍Você explorou a cidade e encontrou um ponto turístico!\n");
+c->pontos += 10;
+}
+
+void investir (struct Cidade *c) {
+printf("💰Você investiu no comércio local e aumentou o PIB!\n");
+c->pib += 100000;
+c->pontos += 20;
+}
+
+int main() {
+   struct Cidade cidade;
+strcpy(cidade.estado, "PA");
+strcpy(cidade.codigo_carta[0], "A01");
+strcpy(cidade.codigo_carta[1], "A02");
+strcpy(cidade.codigo_carta[2], "A03");
+strcpy(cidade.nome, "SANTAREM");
+cidade.populacao = 3000000;
+cidade.area = 10000000.0;
+cidade.pib = 30000000.0;
+cidade.pontos_turisticos = 50;
+cidade.pontos = 0;
+
+int opcao;
+
+do {
+ printf("\n===== JOGO DE TRONCO =====\n");
+ printf("1 - Mostrar dados da cidade\n");
+ printf("2 - Exprorar ponto turístico\n");
+ printf("3 - Investir na cidade\n");
+ printf("0 - Sair do jogo\n");
+ printf("Escolha uma opção:");
+ scanf("%d", &opcao);
+ 
+switch (opcao){
+  case 1:
+     mostrar_dados(&cidade);
+     break;
+  case 2:
+     explorar(&cidade);
+     break;
+
+  case 3:
+     investir(&cidade);
+     break;
+  case 0:
+     printf("Saida do jogo...até logo!\n");
+     break;
+default:
+     printf("Opção inválida, tente novamente!\n");
+   }   
+} while (opcao != 0);
+
+return 0;
+
+
+}
