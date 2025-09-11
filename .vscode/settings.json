@@ -1,0 +1,7 @@
+{
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "S_LONG INT.C": "cpp",
+        "S_LONG.C": "cpp"
+    }
+}
